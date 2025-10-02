@@ -1,0 +1,6 @@
+
+10022:30367 terminated with signal 11 at PC=5653c8c923f1 SP=7ffc700b4a80.  Backtrace:
+./10022(+0x13f1)[0x5653c8c923f1]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90)[0x7f55eb310d90]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80)[0x7f55eb310e40]
+./10022(+0x1205)[0x5653c8c92205]
