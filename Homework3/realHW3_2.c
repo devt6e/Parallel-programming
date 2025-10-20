@@ -21,7 +21,7 @@ int main()
     
     if(myrank == 0)
     {
-        printf("input (lx, ly, gap) :");
+        // printf("input (lx, ly, gap) :");
         scanf("%d %d %d", &lx, &ly, &gap);
         npoint = lx * ly;
         if(npoint > 10100)
@@ -31,6 +31,7 @@ int main()
             return 0;
         }
     }
+    MPI_Barrier(MPI_COMM_WORLD);
     MPI_Bcast(&lx, 1, MPI_INT, 0, MPI_COMM_WORLD);
     MPI_Bcast(&ly, 1, MPI_INT, 0, MPI_COMM_WORLD);
     MPI_Bcast(&gap, 1, MPI_INT, 0, MPI_COMM_WORLD);

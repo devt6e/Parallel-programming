@@ -128,7 +128,7 @@ int main()
                             points[j].neighbors[k].y);
                 }
             }
-            printf("\n");
+            printf("\n"); 
         }
     }
     free(points);
