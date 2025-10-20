@@ -20,10 +20,10 @@ int main()
     MPI_Comm_rank(MPI_COMM_WORLD, &myrank);
     MPI_Comm_size(MPI_COMM_WORLD, &ncpus);
     
+    // sleep(1);
     if(myrank == 0)
     {
-        printf("input (lx, ly, gap) :");
-        sleep(100);
+        // printf("input (lx, ly, gap) :");
         scanf("%d %d %d", &lx, &ly, &gap);
         npoint = lx * ly;
         if(npoint > 10100)
@@ -57,14 +57,15 @@ int main()
 
     for(int i = 0; i < ncpus; i++)
     {
-        if(i!=myrank)
-            MPI_Barrier(MPI_COMM_WORLD);
-        else
+        // if(i!=myrank)
+            // MPI_Barrier(MPI_COMM_WORLD);
+        // else
+        if( i == myrank )
         {
             printf("[rank %d] [%d, %d)\n",myrank, localStart * gap, localEnd * gap);
             for(int j = 0; j < localNPoint; j++)
             {
-                if(j%ly == 0 && j != 0)
+                if((j%ly == 0 || j%5 == 0) && j != 0)
                     printf("\n");
                 if(j == localNPoint-1)
                     printf("id=%d (%d, %d)\n\n", points[j].id, points[j].x, points[j].y);
@@ -72,6 +73,7 @@ int main()
                     printf("id=%d (%d, %d), ", points[j].id, points[j].x, points[j].y);
             }
         }
+        MPI_Barrier(MPI_COMM_WORLD);
     }
     free(points);
     MPI_Finalize();

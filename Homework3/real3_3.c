@@ -51,23 +51,27 @@ void GetNeighbor(point* p, int Lx, int Ly)
 
 int main()
 {
-    const char* NeiStr[] = {"LEFT", "TOP", "RIGHT", "BOTTOM"};
+    const char* NeiStr[] = {"LEFT", "UP", "RIGHT", "DOWN"};
+    const int START = 0, END = 1;
     int myrank, ncpus;
-    int lx, ly, gap;
-    int Lx, Ly;
-    int localStart, localEnd, localNPoint;
+    int lx, ly, gap, Lx, Ly;
     int npoint;
+    int localStart, localEnd, localNPoint;
+    int* myRange[2];
     point* points;
 
     MPI_Init(NULL, NULL);
     MPI_Comm_rank(MPI_COMM_WORLD, &myrank);
     MPI_Comm_size(MPI_COMM_WORLD, &ncpus);
+
+    for(int i = 0; i < 2 ; i++)
+        myRange[i] = (int*)malloc(sizeof(int) * ncpus);
     
     if(myrank == 0)
     {
-        printf("input (lx, ly, gap) :");
         scanf("%d %d %d", &lx, &ly, &gap);
         npoint = lx * ly;
+
         if(npoint > 10100)
         {
             printf("too many point(Max 10100)\n");
@@ -75,16 +79,20 @@ int main()
             return 0;
         }
     }
+    MPI_Barrier(MPI_COMM_WORLD);
     MPI_Bcast(&lx, 1, MPI_INT, 0, MPI_COMM_WORLD);
     MPI_Bcast(&ly, 1, MPI_INT, 0, MPI_COMM_WORLD);
     MPI_Bcast(&gap, 1, MPI_INT, 0, MPI_COMM_WORLD);
 
-    Lx = (lx-1) * gap; //x축 방향으로의 길이
-    Ly = (ly-1) * gap; //y축 방향으로의 길이
+    Lx = (lx-1) * gap; 
+    Ly = (ly-1) * gap;
 
-    localStart = lx * myrank / ncpus;
+    localStart  = lx * myrank / ncpus;
     localEnd = lx * (myrank+1) / ncpus;
-    localNPoint = (localEnd-localStart)*ly; 
+    localNPoint = (localEnd- localStart)*ly; 
+
+    MPI_Allgather(&localStart, 1, MPI_INT, myRange[START], 1, MPI_INT, MPI_COMM_WORLD);
+    MPI_Allgather(&localEnd, 1, MPI_INT, myRange[END], 1, MPI_INT, MPI_COMM_WORLD);
 
     points = (point*)malloc(sizeof(point)*localNPoint);
 
@@ -95,41 +103,49 @@ int main()
             int idx = j + i*ly;
             points[idx].x = (i+localStart) * gap;
             points[idx].y = j * gap;
-            points[idx].id = i + localStart + j*lx;
+            points[idx].id = (i+localStart) + j*lx;
+
             GetNeighbor(points+idx, Lx, Ly);
             for(int k = 0; k < 4; k++)
             {
                 if(points[idx].neighbors[k].valid)
-                    if(points[idx].neighbors[k].x < localStart * gap)
-                        points[idx].neighbors[k].rank = myrank - 1;
-                    else if(points[idx].neighbors[k].x >= localEnd * gap)
-                        points[idx].neighbors[k].rank = myrank  + 1;
+                {
+                    int x = points[idx].neighbors[k].x;
+                    for(int l = 0; l < ncpus; l++)
+                    {
+                        if( myRange[START][l] * gap <= x && x < myRange[END][l] * gap)
+                            points[idx].neighbors[k].rank = l;
+                    }
+                }
             }
         }
     }
 
     for(int i = 0; i < ncpus; i++)
     {
-        if(i!=myrank)
-            MPI_Barrier(MPI_COMM_WORLD);
-        else
+        if(i == myrank)
         {
-            printf("[rank %d] [%d, %d)\n",myrank, localStart * gap, localEnd * gap);
+            printf("[rank %d] (%d <= x < %d)\n",myrank, localStart * gap, localEnd * gap);
             for(int j = 0; j < localNPoint; j++)
             {
                 printf("id=%d (%d, %d)\n", points[j].id, points[j].x, points[j].y);
                 for(int k = 0; k < 4; k++)
                 {
                     if(points[j].neighbors[k].valid)
-                        printf("    [neighbor %s- rank%d] : (%d, %d)\n", 
+                        printf("    [neighbor;%s] (%d, %d)->rank%d\n", 
                             NeiStr[k], 
-                            points[j].neighbors[k].rank,
                             points[j].neighbors[k].x,
-                            points[j].neighbors[k].y);
+                            points[j].neighbors[k].y,
+                            points[j].neighbors[k].rank);
                 }
             }
             printf("\n"); 
         }
+        MPI_Barrier(MPI_COMM_WORLD);
+    }
+    for(int i = 0; i < 2; i++)
+    {
+        free(myRange[i]);
     }
     free(points);
     MPI_Finalize();
