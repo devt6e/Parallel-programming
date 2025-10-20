@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 #include "mpi.h"
 
 typedef struct Point{
@@ -21,7 +22,8 @@ int main()
     
     if(myrank == 0)
     {
-        // printf("input (lx, ly, gap) :");
+        printf("input (lx, ly, gap) :");
+        sleep(100);
         scanf("%d %d %d", &lx, &ly, &gap);
         npoint = lx * ly;
         if(npoint > 10100)
