@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//구조체 선언
 typedef struct Point{
     int x, y;
     int id;
@@ -8,9 +9,9 @@ typedef struct Point{
 
 int main()
 {
-    int lx, ly, gap;
-    int nx, ny;
-    int npoint;
+    int lx, ly, gap;    //입력 변수. gap : 점을 찍는 간격
+    int nx, ny; //각 축으로의 점의 개수
+    int npoint; //
     point* points;
     
     printf("Input (lx, ly, gap) : ");

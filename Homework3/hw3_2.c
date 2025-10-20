@@ -66,9 +66,9 @@ int main()
                 if(i%ny == 0 && i != 0)
                     printf("\n");
                 if(i == localNPoint-1)
-                    printf("(%d, %d)\n", points[i].x, points[i].y);
+                    printf("id %d : (%d, %d)\n", points[i].id, points[i].x, points[i].y);
                 else
-                    printf("(%d, %d), ", points[i].x, points[i].y);
+                    printf("id %d : (%d, %d), ", points[i].id,points[i].x, points[i].y);
             }
         }
     }      
