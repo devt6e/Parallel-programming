@@ -10,20 +10,20 @@ typedef struct Point{
 
 int main()
 {
-    int myrank, ncpus;
-    int lx, ly, gap;
-    int localStart, localEnd, localNPoint;
-    int npoint;
-    point* points;
+    int myrank, ncpus;  
+    int lx, ly, gap;    //lx, ly: 각 축의 점의 개수. gap: 점을 찍는 간격
+    int localStart, localEnd, localNPoint;  //각 프로세스가 생성할 영역과 점의 개수
+    int npoint; //점의 개수
+    point* points;  //점의 정보를 저장하는 배열
 
     MPI_Init(NULL, NULL);
     MPI_Comm_rank(MPI_COMM_WORLD, &myrank);
     MPI_Comm_size(MPI_COMM_WORLD, &ncpus);
     
-    // sleep(1);
     if(myrank == 0)
     {
-        // printf("input (lx, ly, gap) :");
+        printf("input (lx, ly, gap): ");
+        fflush(stdout);
         scanf("%d %d %d", &lx, &ly, &gap);
         npoint = lx * ly;
         if(npoint > 10100)
@@ -51,21 +51,19 @@ int main()
             int idx = j + i*ly;
             points[idx].x = (i+localStart) * gap;
             points[idx].y = j * gap;
-            points[idx].id = i + localStart + j*lx;
+            points[idx].id = (i+localStart) + j*lx + 1;
         }
     }
 
     for(int i = 0; i < ncpus; i++)
     {
-        // if(i!=myrank)
-            // MPI_Barrier(MPI_COMM_WORLD);
-        // else
-        if( i == myrank )
+        MPI_Barrier(MPI_COMM_WORLD);
+        if(i == myrank )
         {
             printf("[rank %d] [%d, %d)\n",myrank, localStart * gap, localEnd * gap);
             for(int j = 0; j < localNPoint; j++)
             {
-                if((j%ly == 0 || j%5 == 0) && j != 0)
+                if(j%ly == 0 && j != 0)
                     printf("\n");
                 if(j == localNPoint-1)
                     printf("id=%d (%d, %d)\n\n", points[j].id, points[j].x, points[j].y);

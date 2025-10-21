@@ -1,0 +1,1432 @@
+input (lx, ly, gap): [rank 0] (0 <= x < 1)
+id=1 (0, 0)
+    [neighbor;UP] (0, 1)->rank0
+    [neighbor;RIGHT] (1, 0)->rank1
+id=11 (0, 1)
+    [neighbor;UP] (0, 2)->rank0
+    [neighbor;RIGHT] (1, 1)->rank1
+    [neighbor;DOWN] (0, 0)->rank0
+id=21 (0, 2)
+    [neighbor;UP] (0, 3)->rank0
+    [neighbor;RIGHT] (1, 2)->rank1
+    [neighbor;DOWN] (0, 1)->rank0
+id=31 (0, 3)
+    [neighbor;UP] (0, 4)->rank0
+    [neighbor;RIGHT] (1, 3)->rank1
+    [neighbor;DOWN] (0, 2)->rank0
+id=41 (0, 4)
+    [neighbor;UP] (0, 5)->rank0
+    [neighbor;RIGHT] (1, 4)->rank1
+    [neighbor;DOWN] (0, 3)->rank0
+id=51 (0, 5)
+    [neighbor;UP] (0, 6)->rank0
+    [neighbor;RIGHT] (1, 5)->rank1
+    [neighbor;DOWN] (0, 4)->rank0
+id=61 (0, 6)
+    [neighbor;UP] (0, 7)->rank0
+    [neighbor;RIGHT] (1, 6)->rank1
+    [neighbor;DOWN] (0, 5)->rank0
+id=71 (0, 7)
+    [neighbor;UP] (0, 8)->rank0
+    [neighbor;RIGHT] (1, 7)->rank1
+    [neighbor;DOWN] (0, 6)->rank0
+id=81 (0, 8)
+    [neighbor;UP] (0, 9)->rank0
+    [neighbor;RIGHT] (1, 8)->rank1
+    [neighbor;DOWN] (0, 7)->rank0
+id=91 (0, 9)
+    [neighbor;UP] (0, 10)->rank0
+    [neighbor;RIGHT] (1, 9)->rank1
+    [neighbor;DOWN] (0, 8)->rank0
+id=101 (0, 10)
+    [neighbor;UP] (0, 11)->rank0
+    [neighbor;RIGHT] (1, 10)->rank1
+    [neighbor;DOWN] (0, 9)->rank0
+id=111 (0, 11)
+    [neighbor;UP] (0, 12)->rank0
+    [neighbor;RIGHT] (1, 11)->rank1
+    [neighbor;DOWN] (0, 10)->rank0
+id=121 (0, 12)
+    [neighbor;UP] (0, 13)->rank0
+    [neighbor;RIGHT] (1, 12)->rank1
+    [neighbor;DOWN] (0, 11)->rank0
+id=131 (0, 13)
+    [neighbor;UP] (0, 14)->rank0
+    [neighbor;RIGHT] (1, 13)->rank1
+    [neighbor;DOWN] (0, 12)->rank0
+id=141 (0, 14)
+    [neighbor;UP] (0, 15)->rank0
+    [neighbor;RIGHT] (1, 14)->rank1
+    [neighbor;DOWN] (0, 13)->rank0
+id=151 (0, 15)
+    [neighbor;UP] (0, 16)->rank0
+    [neighbor;RIGHT] (1, 15)->rank1
+    [neighbor;DOWN] (0, 14)->rank0
+id=161 (0, 16)
+    [neighbor;UP] (0, 17)->rank0
+    [neighbor;RIGHT] (1, 16)->rank1
+    [neighbor;DOWN] (0, 15)->rank0
+id=171 (0, 17)
+    [neighbor;UP] (0, 18)->rank0
+    [neighbor;RIGHT] (1, 17)->rank1
+    [neighbor;DOWN] (0, 16)->rank0
+id=181 (0, 18)
+    [neighbor;UP] (0, 19)->rank0
+    [neighbor;RIGHT] (1, 18)->rank1
+    [neighbor;DOWN] (0, 17)->rank0
+id=191 (0, 19)
+    [neighbor;UP] (0, 20)->rank0
+    [neighbor;RIGHT] (1, 19)->rank1
+    [neighbor;DOWN] (0, 18)->rank0
+id=201 (0, 20)
+    [neighbor;UP] (0, 21)->rank0
+    [neighbor;RIGHT] (1, 20)->rank1
+    [neighbor;DOWN] (0, 19)->rank0
+id=211 (0, 21)
+    [neighbor;UP] (0, 22)->rank0
+    [neighbor;RIGHT] (1, 21)->rank1
+    [neighbor;DOWN] (0, 20)->rank0
+id=221 (0, 22)
+    [neighbor;UP] (0, 23)->rank0
+    [neighbor;RIGHT] (1, 22)->rank1
+    [neighbor;DOWN] (0, 21)->rank0
+id=231 (0, 23)
+    [neighbor;UP] (0, 24)->rank0
+    [neighbor;RIGHT] (1, 23)->rank1
+    [neighbor;DOWN] (0, 22)->rank0
+id=241 (0, 24)
+    [neighbor;UP] (0, 25)->rank0
+    [neighbor;RIGHT] (1, 24)->rank1
+    [neighbor;DOWN] (0, 23)->rank0
+id=251 (0, 25)
+    [neighbor;UP] (0, 26)->rank0
+    [neighbor;RIGHT] (1, 25)->rank1
+    [neighbor;DOWN] (0, 24)->rank0
+id=261 (0, 26)
+    [neighbor;UP] (0, 27)->rank0
+    [neighbor;RIGHT] (1, 26)->rank1
+    [neighbor;DOWN] (0, 25)->rank0
+id=271 (0, 27)
+    [neighbor;UP] (0, 28)->rank0
+    [neighbor;RIGHT] (1, 27)->rank1
+    [neighbor;DOWN] (0, 26)->rank0
+id=281 (0, 28)
+    [neighbor;UP] (0, 29)->rank0
+    [neighbor;RIGHT] (1, 28)->rank1
+    [neighbor;DOWN] (0, 27)->rank0
+id=291 (0, 29)
+    [neighbor;RIGHT] (1, 29)->rank1
+    [neighbor;DOWN] (0, 28)->rank0
+
+[rank 1] (1 <= x < 3)
+id=2 (1, 0)
+    [neighbor;LEFT] (0, 0)->rank0
+    [neighbor;UP] (1, 1)->rank1
+    [neighbor;RIGHT] (2, 0)->rank1
+id=12 (1, 1)
+    [neighbor;LEFT] (0, 1)->rank0
+    [neighbor;UP] (1, 2)->rank1
+    [neighbor;RIGHT] (2, 1)->rank1
+    [neighbor;DOWN] (1, 0)->rank1
+id=22 (1, 2)
+    [neighbor;LEFT] (0, 2)->rank0
+    [neighbor;UP] (1, 3)->rank1
+    [neighbor;RIGHT] (2, 2)->rank1
+    [neighbor;DOWN] (1, 1)->rank1
+id=32 (1, 3)
+    [neighbor;LEFT] (0, 3)->rank0
+    [neighbor;UP] (1, 4)->rank1
+    [neighbor;RIGHT] (2, 3)->rank1
+    [neighbor;DOWN] (1, 2)->rank1
+id=42 (1, 4)
+    [neighbor;LEFT] (0, 4)->rank0
+    [neighbor;UP] (1, 5)->rank1
+    [neighbor;RIGHT] (2, 4)->rank1
+    [neighbor;DOWN] (1, 3)->rank1
+id=52 (1, 5)
+    [neighbor;LEFT] (0, 5)->rank0
+    [neighbor;UP] (1, 6)->rank1
+    [neighbor;RIGHT] (2, 5)->rank1
+    [neighbor;DOWN] (1, 4)->rank1
+id=62 (1, 6)
+    [neighbor;LEFT] (0, 6)->rank0
+    [neighbor;UP] (1, 7)->rank1
+    [neighbor;RIGHT] (2, 6)->rank1
+    [neighbor;DOWN] (1, 5)->rank1
+id=72 (1, 7)
+    [neighbor;LEFT] (0, 7)->rank0
+    [neighbor;UP] (1, 8)->rank1
+    [neighbor;RIGHT] (2, 7)->rank1
+    [neighbor;DOWN] (1, 6)->rank1
+id=82 (1, 8)
+    [neighbor;LEFT] (0, 8)->rank0
+    [neighbor;UP] (1, 9)->rank1
+    [neighbor;RIGHT] (2, 8)->rank1
+    [neighbor;DOWN] (1, 7)->rank1
+id=92 (1, 9)
+    [neighbor;LEFT] (0, 9)->rank0
+    [neighbor;UP] (1, 10)->rank1
+    [neighbor;RIGHT] (2, 9)->rank1
+    [neighbor;DOWN] (1, 8)->rank1
+id=102 (1, 10)
+    [neighbor;LEFT] (0, 10)->rank0
+    [neighbor;UP] (1, 11)->rank1
+    [neighbor;RIGHT] (2, 10)->rank1
+    [neighbor;DOWN] (1, 9)->rank1
+id=112 (1, 11)
+    [neighbor;LEFT] (0, 11)->rank0
+    [neighbor;UP] (1, 12)->rank1
+    [neighbor;RIGHT] (2, 11)->rank1
+    [neighbor;DOWN] (1, 10)->rank1
+id=122 (1, 12)
+    [neighbor;LEFT] (0, 12)->rank0
+    [neighbor;UP] (1, 13)->rank1
+    [neighbor;RIGHT] (2, 12)->rank1
+    [neighbor;DOWN] (1, 11)->rank1
+id=132 (1, 13)
+    [neighbor;LEFT] (0, 13)->rank0
+    [neighbor;UP] (1, 14)->rank1
+    [neighbor;RIGHT] (2, 13)->rank1
+    [neighbor;DOWN] (1, 12)->rank1
+id=142 (1, 14)
+    [neighbor;LEFT] (0, 14)->rank0
+    [neighbor;UP] (1, 15)->rank1
+    [neighbor;RIGHT] (2, 14)->rank1
+    [neighbor;DOWN] (1, 13)->rank1
+id=152 (1, 15)
+    [neighbor;LEFT] (0, 15)->rank0
+    [neighbor;UP] (1, 16)->rank1
+    [neighbor;RIGHT] (2, 15)->rank1
+    [neighbor;DOWN] (1, 14)->rank1
+id=162 (1, 16)
+    [neighbor;LEFT] (0, 16)->rank0
+    [neighbor;UP] (1, 17)->rank1
+    [neighbor;RIGHT] (2, 16)->rank1
+    [neighbor;DOWN] (1, 15)->rank1
+id=172 (1, 17)
+    [neighbor;LEFT] (0, 17)->rank0
+    [neighbor;UP] (1, 18)->rank1
+    [neighbor;RIGHT] (2, 17)->rank1
+    [neighbor;DOWN] (1, 16)->rank1
+id=182 (1, 18)
+    [neighbor;LEFT] (0, 18)->rank0
+    [neighbor;UP] (1, 19)->rank1
+    [neighbor;RIGHT] (2, 18)->rank1
+    [neighbor;DOWN] (1, 17)->rank1
+id=192 (1, 19)
+    [neighbor;LEFT] (0, 19)->rank0
+    [neighbor;UP] (1, 20)->rank1
+    [neighbor;RIGHT] (2, 19)->rank1
+    [neighbor;DOWN] (1, 18)->rank1
+id=202 (1, 20)
+    [neighbor;LEFT] (0, 20)->rank0
+    [neighbor;UP] (1, 21)->rank1
+    [neighbor;RIGHT] (2, 20)->rank1
+    [neighbor;DOWN] (1, 19)->rank1
+id=212 (1, 21)
+    [neighbor;LEFT] (0, 21)->rank0
+    [neighbor;UP] (1, 22)->rank1
+    [neighbor;RIGHT] (2, 21)->rank1
+    [neighbor;DOWN] (1, 20)->rank1
+id=222 (1, 22)
+    [neighbor;LEFT] (0, 22)->rank0
+    [neighbor;UP] (1, 23)->rank1
+    [neighbor;RIGHT] (2, 22)->rank1
+    [neighbor;DOWN] (1, 21)->rank1
+id=232 (1, 23)
+    [neighbor;LEFT] (0, 23)->rank0
+    [neighbor;UP] (1, 24)->rank1
+    [neighbor;RIGHT] (2, 23)->rank1
+    [neighbor;DOWN] (1, 22)->rank1
+id=242 (1, 24)
+    [neighbor;LEFT] (0, 24)->rank0
+    [neighbor;UP] (1, 25)->rank1
+    [neighbor;RIGHT] (2, 24)->rank1
+    [neighbor;DOWN] (1, 23)->rank1
+id=252 (1, 25)
+    [neighbor;LEFT] (0, 25)->rank0
+    [neighbor;UP] (1, 26)->rank1
+    [neighbor;RIGHT] (2, 25)->rank1
+    [neighbor;DOWN] (1, 24)->rank1
+id=262 (1, 26)
+    [neighbor;LEFT] (0, 26)->rank0
+    [neighbor;UP] (1, 27)->rank1
+    [neighbor;RIGHT] (2, 26)->rank1
+    [neighbor;DOWN] (1, 25)->rank1
+id=272 (1, 27)
+    [neighbor;LEFT] (0, 27)->rank0
+    [neighbor;UP] (1, 28)->rank1
+    [neighbor;RIGHT] (2, 27)->rank1
+    [neighbor;DOWN] (1, 26)->rank1
+id=282 (1, 28)
+    [neighbor;LEFT] (0, 28)->rank0
+    [neighbor;UP] (1, 29)->rank1
+    [neighbor;RIGHT] (2, 28)->rank1
+    [neighbor;DOWN] (1, 27)->rank1
+id=292 (1, 29)
+    [neighbor;LEFT] (0, 29)->rank0
+    [neighbor;RIGHT] (2, 29)->rank1
+    [neighbor;DOWN] (1, 28)->rank1
+id=3 (2, 0)
+    [neighbor;LEFT] (1, 0)->rank1
+    [neighbor;UP] (2, 1)->rank1
+    [neighbor;RIGHT] (3, 0)->rank2
+id=13 (2, 1)
+    [neighbor;LEFT] (1, 1)->rank1
+    [neighbor;UP] (2, 2)->rank1
+    [neighbor;RIGHT] (3, 1)->rank2
+    [neighbor;DOWN] (2, 0)->rank1
+id=23 (2, 2)
+    [neighbor;LEFT] (1, 2)->rank1
+    [neighbor;UP] (2, 3)->rank1
+    [neighbor;RIGHT] (3, 2)->rank2
+    [neighbor;DOWN] (2, 1)->rank1
+id=33 (2, 3)
+    [neighbor;LEFT] (1, 3)->rank1
+    [neighbor;UP] (2, 4)->rank1
+    [neighbor;RIGHT] (3, 3)->rank2
+    [neighbor;DOWN] (2, 2)->rank1
+id=43 (2, 4)
+    [neighbor;LEFT] (1, 4)->rank1
+    [neighbor;UP] (2, 5)->rank1
+    [neighbor;RIGHT] (3, 4)->rank2
+    [neighbor;DOWN] (2, 3)->rank1
+id=53 (2, 5)
+    [neighbor;LEFT] (1, 5)->rank1
+    [neighbor;UP] (2, 6)->rank1
+    [neighbor;RIGHT] (3, 5)->rank2
+    [neighbor;DOWN] (2, 4)->rank1
+id=63 (2, 6)
+    [neighbor;LEFT] (1, 6)->rank1
+    [neighbor;UP] (2, 7)->rank1
+    [neighbor;RIGHT] (3, 6)->rank2
+    [neighbor;DOWN] (2, 5)->rank1
+id=73 (2, 7)
+    [neighbor;LEFT] (1, 7)->rank1
+    [neighbor;UP] (2, 8)->rank1
+    [neighbor;RIGHT] (3, 7)->rank2
+    [neighbor;DOWN] (2, 6)->rank1
+id=83 (2, 8)
+    [neighbor;LEFT] (1, 8)->rank1
+    [neighbor;UP] (2, 9)->rank1
+    [neighbor;RIGHT] (3, 8)->rank2
+    [neighbor;DOWN] (2, 7)->rank1
+id=93 (2, 9)
+    [neighbor;LEFT] (1, 9)->rank1
+    [neighbor;UP] (2, 10)->rank1
+    [neighbor;RIGHT] (3, 9)->rank2
+    [neighbor;DOWN] (2, 8)->rank1
+id=103 (2, 10)
+    [neighbor;LEFT] (1, 10)->rank1
+    [neighbor;UP] (2, 11)->rank1
+    [neighbor;RIGHT] (3, 10)->rank2
+    [neighbor;DOWN] (2, 9)->rank1
+id=113 (2, 11)
+    [neighbor;LEFT] (1, 11)->rank1
+    [neighbor;UP] (2, 12)->rank1
+    [neighbor;RIGHT] (3, 11)->rank2
+    [neighbor;DOWN] (2, 10)->rank1
+id=123 (2, 12)
+    [neighbor;LEFT] (1, 12)->rank1
+    [neighbor;UP] (2, 13)->rank1
+    [neighbor;RIGHT] (3, 12)->rank2
+    [neighbor;DOWN] (2, 11)->rank1
+id=133 (2, 13)
+    [neighbor;LEFT] (1, 13)->rank1
+    [neighbor;UP] (2, 14)->rank1
+    [neighbor;RIGHT] (3, 13)->rank2
+    [neighbor;DOWN] (2, 12)->rank1
+id=143 (2, 14)
+    [neighbor;LEFT] (1, 14)->rank1
+    [neighbor;UP] (2, 15)->rank1
+    [neighbor;RIGHT] (3, 14)->rank2
+    [neighbor;DOWN] (2, 13)->rank1
+id=153 (2, 15)
+    [neighbor;LEFT] (1, 15)->rank1
+    [neighbor;UP] (2, 16)->rank1
+    [neighbor;RIGHT] (3, 15)->rank2
+    [neighbor;DOWN] (2, 14)->rank1
+id=163 (2, 16)
+    [neighbor;LEFT] (1, 16)->rank1
+    [neighbor;UP] (2, 17)->rank1
+    [neighbor;RIGHT] (3, 16)->rank2
+    [neighbor;DOWN] (2, 15)->rank1
+id=173 (2, 17)
+    [neighbor;LEFT] (1, 17)->rank1
+    [neighbor;UP] (2, 18)->rank1
+    [neighbor;RIGHT] (3, 17)->rank2
+    [neighbor;DOWN] (2, 16)->rank1
+id=183 (2, 18)
+    [neighbor;LEFT] (1, 18)->rank1
+    [neighbor;UP] (2, 19)->rank1
+    [neighbor;RIGHT] (3, 18)->rank2
+    [neighbor;DOWN] (2, 17)->rank1
+id=193 (2, 19)
+    [neighbor;LEFT] (1, 19)->rank1
+    [neighbor;UP] (2, 20)->rank1
+    [neighbor;RIGHT] (3, 19)->rank2
+    [neighbor;DOWN] (2, 18)->rank1
+id=203 (2, 20)
+    [neighbor;LEFT] (1, 20)->rank1
+    [neighbor;UP] (2, 21)->rank1
+    [neighbor;RIGHT] (3, 20)->rank2
+    [neighbor;DOWN] (2, 19)->rank1
+id=213 (2, 21)
+    [neighbor;LEFT] (1, 21)->rank1
+    [neighbor;UP] (2, 22)->rank1
+    [neighbor;RIGHT] (3, 21)->rank2
+    [neighbor;DOWN] (2, 20)->rank1
+id=223 (2, 22)
+    [neighbor;LEFT] (1, 22)->rank1
+    [neighbor;UP] (2, 23)->rank1
+    [neighbor;RIGHT] (3, 22)->rank2
+    [neighbor;DOWN] (2, 21)->rank1
+id=233 (2, 23)
+    [neighbor;LEFT] (1, 23)->rank1
+    [neighbor;UP] (2, 24)->rank1
+    [neighbor;RIGHT] (3, 23)->rank2
+    [neighbor;DOWN] (2, 22)->rank1
+id=243 (2, 24)
+    [neighbor;LEFT] (1, 24)->rank1
+    [neighbor;UP] (2, 25)->rank1
+    [neighbor;RIGHT] (3, 24)->rank2
+    [neighbor;DOWN] (2, 23)->rank1
+id=253 (2, 25)
+    [neighbor;LEFT] (1, 25)->rank1
+    [neighbor;UP] (2, 26)->rank1
+    [neighbor;RIGHT] (3, 25)->rank2
+    [neighbor;DOWN] (2, 24)->rank1
+id=263 (2, 26)
+    [neighbor;LEFT] (1, 26)->rank1
+    [neighbor;UP] (2, 27)->rank1
+    [neighbor;RIGHT] (3, 26)->rank2
+    [neighbor;DOWN] (2, 25)->rank1
+id=273 (2, 27)
+    [neighbor;LEFT] (1, 27)->rank1
+    [neighbor;UP] (2, 28)->rank1
+    [neighbor;RIGHT] (3, 27)->rank2
+    [neighbor;DOWN] (2, 26)->rank1
+id=283 (2, 28)
+    [neighbor;LEFT] (1, 28)->rank1
+    [neighbor;UP] (2, 29)->rank1
+    [neighbor;RIGHT] (3, 28)->rank2
+    [neighbor;DOWN] (2, 27)->rank1
+id=293 (2, 29)
+    [neighbor;LEFT] (1, 29)->rank1
+    [neighbor;RIGHT] (3, 29)->rank2
+    [neighbor;DOWN] (2, 28)->rank1
+
+[rank 2] (3 <= x < 5)
+id=4 (3, 0)
+    [neighbor;LEFT] (2, 0)->rank1
+    [neighbor;UP] (3, 1)->rank2
+    [neighbor;RIGHT] (4, 0)->rank2
+id=14 (3, 1)
+    [neighbor;LEFT] (2, 1)->rank1
+    [neighbor;UP] (3, 2)->rank2
+    [neighbor;RIGHT] (4, 1)->rank2
+    [neighbor;DOWN] (3, 0)->rank2
+id=24 (3, 2)
+    [neighbor;LEFT] (2, 2)->rank1
+    [neighbor;UP] (3, 3)->rank2
+    [neighbor;RIGHT] (4, 2)->rank2
+    [neighbor;DOWN] (3, 1)->rank2
+id=34 (3, 3)
+    [neighbor;LEFT] (2, 3)->rank1
+    [neighbor;UP] (3, 4)->rank2
+    [neighbor;RIGHT] (4, 3)->rank2
+    [neighbor;DOWN] (3, 2)->rank2
+id=44 (3, 4)
+    [neighbor;LEFT] (2, 4)->rank1
+    [neighbor;UP] (3, 5)->rank2
+    [neighbor;RIGHT] (4, 4)->rank2
+    [neighbor;DOWN] (3, 3)->rank2
+id=54 (3, 5)
+    [neighbor;LEFT] (2, 5)->rank1
+    [neighbor;UP] (3, 6)->rank2
+    [neighbor;RIGHT] (4, 5)->rank2
+    [neighbor;DOWN] (3, 4)->rank2
+id=64 (3, 6)
+    [neighbor;LEFT] (2, 6)->rank1
+    [neighbor;UP] (3, 7)->rank2
+    [neighbor;RIGHT] (4, 6)->rank2
+    [neighbor;DOWN] (3, 5)->rank2
+id=74 (3, 7)
+    [neighbor;LEFT] (2, 7)->rank1
+    [neighbor;UP] (3, 8)->rank2
+    [neighbor;RIGHT] (4, 7)->rank2
+    [neighbor;DOWN] (3, 6)->rank2
+id=84 (3, 8)
+    [neighbor;LEFT] (2, 8)->rank1
+    [neighbor;UP] (3, 9)->rank2
+    [neighbor;RIGHT] (4, 8)->rank2
+    [neighbor;DOWN] (3, 7)->rank2
+id=94 (3, 9)
+    [neighbor;LEFT] (2, 9)->rank1
+    [neighbor;UP] (3, 10)->rank2
+    [neighbor;RIGHT] (4, 9)->rank2
+    [neighbor;DOWN] (3, 8)->rank2
+id=104 (3, 10)
+    [neighbor;LEFT] (2, 10)->rank1
+    [neighbor;UP] (3, 11)->rank2
+    [neighbor;RIGHT] (4, 10)->rank2
+    [neighbor;DOWN] (3, 9)->rank2
+id=114 (3, 11)
+    [neighbor;LEFT] (2, 11)->rank1
+    [neighbor;UP] (3, 12)->rank2
+    [neighbor;RIGHT] (4, 11)->rank2
+    [neighbor;DOWN] (3, 10)->rank2
+id=124 (3, 12)
+    [neighbor;LEFT] (2, 12)->rank1
+    [neighbor;UP] (3, 13)->rank2
+    [neighbor;RIGHT] (4, 12)->rank2
+    [neighbor;DOWN] (3, 11)->rank2
+id=134 (3, 13)
+    [neighbor;LEFT] (2, 13)->rank1
+    [neighbor;UP] (3, 14)->rank2
+    [neighbor;RIGHT] (4, 13)->rank2
+    [neighbor;DOWN] (3, 12)->rank2
+id=144 (3, 14)
+    [neighbor;LEFT] (2, 14)->rank1
+    [neighbor;UP] (3, 15)->rank2
+    [neighbor;RIGHT] (4, 14)->rank2
+    [neighbor;DOWN] (3, 13)->rank2
+id=154 (3, 15)
+    [neighbor;LEFT] (2, 15)->rank1
+    [neighbor;UP] (3, 16)->rank2
+    [neighbor;RIGHT] (4, 15)->rank2
+    [neighbor;DOWN] (3, 14)->rank2
+id=164 (3, 16)
+    [neighbor;LEFT] (2, 16)->rank1
+    [neighbor;UP] (3, 17)->rank2
+    [neighbor;RIGHT] (4, 16)->rank2
+    [neighbor;DOWN] (3, 15)->rank2
+id=174 (3, 17)
+    [neighbor;LEFT] (2, 17)->rank1
+    [neighbor;UP] (3, 18)->rank2
+    [neighbor;RIGHT] (4, 17)->rank2
+    [neighbor;DOWN] (3, 16)->rank2
+id=184 (3, 18)
+    [neighbor;LEFT] (2, 18)->rank1
+    [neighbor;UP] (3, 19)->rank2
+    [neighbor;RIGHT] (4, 18)->rank2
+    [neighbor;DOWN] (3, 17)->rank2
+id=194 (3, 19)
+    [neighbor;LEFT] (2, 19)->rank1
+    [neighbor;UP] (3, 20)->rank2
+    [neighbor;RIGHT] (4, 19)->rank2
+    [neighbor;DOWN] (3, 18)->rank2
+id=204 (3, 20)
+    [neighbor;LEFT] (2, 20)->rank1
+    [neighbor;UP] (3, 21)->rank2
+    [neighbor;RIGHT] (4, 20)->rank2
+    [neighbor;DOWN] (3, 19)->rank2
+id=214 (3, 21)
+    [neighbor;LEFT] (2, 21)->rank1
+    [neighbor;UP] (3, 22)->rank2
+    [neighbor;RIGHT] (4, 21)->rank2
+    [neighbor;DOWN] (3, 20)->rank2
+id=224 (3, 22)
+    [neighbor;LEFT] (2, 22)->rank1
+    [neighbor;UP] (3, 23)->rank2
+    [neighbor;RIGHT] (4, 22)->rank2
+    [neighbor;DOWN] (3, 21)->rank2
+id=234 (3, 23)
+    [neighbor;LEFT] (2, 23)->rank1
+    [neighbor;UP] (3, 24)->rank2
+    [neighbor;RIGHT] (4, 23)->rank2
+    [neighbor;DOWN] (3, 22)->rank2
+id=244 (3, 24)
+    [neighbor;LEFT] (2, 24)->rank1
+    [neighbor;UP] (3, 25)->rank2
+    [neighbor;RIGHT] (4, 24)->rank2
+    [neighbor;DOWN] (3, 23)->rank2
+id=254 (3, 25)
+    [neighbor;LEFT] (2, 25)->rank1
+    [neighbor;UP] (3, 26)->rank2
+    [neighbor;RIGHT] (4, 25)->rank2
+    [neighbor;DOWN] (3, 24)->rank2
+id=264 (3, 26)
+    [neighbor;LEFT] (2, 26)->rank1
+    [neighbor;UP] (3, 27)->rank2
+    [neighbor;RIGHT] (4, 26)->rank2
+    [neighbor;DOWN] (3, 25)->rank2
+id=274 (3, 27)
+    [neighbor;LEFT] (2, 27)->rank1
+    [neighbor;UP] (3, 28)->rank2
+    [neighbor;RIGHT] (4, 27)->rank2
+    [neighbor;DOWN] (3, 26)->rank2
+id=284 (3, 28)
+    [neighbor;LEFT] (2, 28)->rank1
+    [neighbor;UP] (3, 29)->rank2
+    [neighbor;RIGHT] (4, 28)->rank2
+    [neighbor;DOWN] (3, 27)->rank2
+id=294 (3, 29)
+    [neighbor;LEFT] (2, 29)->rank1
+    [neighbor;RIGHT] (4, 29)->rank2
+    [neighbor;DOWN] (3, 28)->rank2
+id=5 (4, 0)
+    [neighbor;LEFT] (3, 0)->rank2
+    [neighbor;UP] (4, 1)->rank2
+    [neighbor;RIGHT] (5, 0)->rank3
+id=15 (4, 1)
+    [neighbor;LEFT] (3, 1)->rank2
+    [neighbor;UP] (4, 2)->rank2
+    [neighbor;RIGHT] (5, 1)->rank3
+    [neighbor;DOWN] (4, 0)->rank2
+id=25 (4, 2)
+    [neighbor;LEFT] (3, 2)->rank2
+    [neighbor;UP] (4, 3)->rank2
+    [neighbor;RIGHT] (5, 2)->rank3
+    [neighbor;DOWN] (4, 1)->rank2
+id=35 (4, 3)
+    [neighbor;LEFT] (3, 3)->rank2
+    [neighbor;UP] (4, 4)->rank2
+    [neighbor;RIGHT] (5, 3)->rank3
+    [neighbor;DOWN] (4, 2)->rank2
+id=45 (4, 4)
+    [neighbor;LEFT] (3, 4)->rank2
+    [neighbor;UP] (4, 5)->rank2
+    [neighbor;RIGHT] (5, 4)->rank3
+    [neighbor;DOWN] (4, 3)->rank2
+id=55 (4, 5)
+    [neighbor;LEFT] (3, 5)->rank2
+    [neighbor;UP] (4, 6)->rank2
+    [neighbor;RIGHT] (5, 5)->rank3
+    [neighbor;DOWN] (4, 4)->rank2
+id=65 (4, 6)
+    [neighbor;LEFT] (3, 6)->rank2
+    [neighbor;UP] (4, 7)->rank2
+    [neighbor;RIGHT] (5, 6)->rank3
+    [neighbor;DOWN] (4, 5)->rank2
+id=75 (4, 7)
+    [neighbor;LEFT] (3, 7)->rank2
+    [neighbor;UP] (4, 8)->rank2
+    [neighbor;RIGHT] (5, 7)->rank3
+    [neighbor;DOWN] (4, 6)->rank2
+id=85 (4, 8)
+    [neighbor;LEFT] (3, 8)->rank2
+    [neighbor;UP] (4, 9)->rank2
+    [neighbor;RIGHT] (5, 8)->rank3
+    [neighbor;DOWN] (4, 7)->rank2
+id=95 (4, 9)
+    [neighbor;LEFT] (3, 9)->rank2
+    [neighbor;UP] (4, 10)->rank2
+    [neighbor;RIGHT] (5, 9)->rank3
+    [neighbor;DOWN] (4, 8)->rank2
+id=105 (4, 10)
+    [neighbor;LEFT] (3, 10)->rank2
+    [neighbor;UP] (4, 11)->rank2
+    [neighbor;RIGHT] (5, 10)->rank3
+    [neighbor;DOWN] (4, 9)->rank2
+id=115 (4, 11)
+    [neighbor;LEFT] (3, 11)->rank2
+    [neighbor;UP] (4, 12)->rank2
+    [neighbor;RIGHT] (5, 11)->rank3
+    [neighbor;DOWN] (4, 10)->rank2
+id=125 (4, 12)
+    [neighbor;LEFT] (3, 12)->rank2
+    [neighbor;UP] (4, 13)->rank2
+    [neighbor;RIGHT] (5, 12)->rank3
+    [neighbor;DOWN] (4, 11)->rank2
+id=135 (4, 13)
+    [neighbor;LEFT] (3, 13)->rank2
+    [neighbor;UP] (4, 14)->rank2
+    [neighbor;RIGHT] (5, 13)->rank3
+    [neighbor;DOWN] (4, 12)->rank2
+id=145 (4, 14)
+    [neighbor;LEFT] (3, 14)->rank2
+    [neighbor;UP] (4, 15)->rank2
+    [neighbor;RIGHT] (5, 14)->rank3
+    [neighbor;DOWN] (4, 13)->rank2
+id=155 (4, 15)
+    [neighbor;LEFT] (3, 15)->rank2
+    [neighbor;UP] (4, 16)->rank2
+    [neighbor;RIGHT] (5, 15)->rank3
+    [neighbor;DOWN] (4, 14)->rank2
+id=165 (4, 16)
+    [neighbor;LEFT] (3, 16)->rank2
+    [neighbor;UP] (4, 17)->rank2
+    [neighbor;RIGHT] (5, 16)->rank3
+    [neighbor;DOWN] (4, 15)->rank2
+id=175 (4, 17)
+    [neighbor;LEFT] (3, 17)->rank2
+    [neighbor;UP] (4, 18)->rank2
+    [neighbor;RIGHT] (5, 17)->rank3
+    [neighbor;DOWN] (4, 16)->rank2
+id=185 (4, 18)
+    [neighbor;LEFT] (3, 18)->rank2
+    [neighbor;UP] (4, 19)->rank2
+    [neighbor;RIGHT] (5, 18)->rank3
+    [neighbor;DOWN] (4, 17)->rank2
+id=195 (4, 19)
+    [neighbor;LEFT] (3, 19)->rank2
+    [neighbor;UP] (4, 20)->rank2
+    [neighbor;RIGHT] (5, 19)->rank3
+    [neighbor;DOWN] (4, 18)->rank2
+id=205 (4, 20)
+    [neighbor;LEFT] (3, 20)->rank2
+    [neighbor;UP] (4, 21)->rank2
+    [neighbor;RIGHT] (5, 20)->rank3
+    [neighbor;DOWN] (4, 19)->rank2
+id=215 (4, 21)
+    [neighbor;LEFT] (3, 21)->rank2
+    [neighbor;UP] (4, 22)->rank2
+    [neighbor;RIGHT] (5, 21)->rank3
+    [neighbor;DOWN] (4, 20)->rank2
+id=225 (4, 22)
+    [neighbor;LEFT] (3, 22)->rank2
+    [neighbor;UP] (4, 23)->rank2
+    [neighbor;RIGHT] (5, 22)->rank3
+    [neighbor;DOWN] (4, 21)->rank2
+id=235 (4, 23)
+    [neighbor;LEFT] (3, 23)->rank2
+    [neighbor;UP] (4, 24)->rank2
+    [neighbor;RIGHT] (5, 23)->rank3
+    [neighbor;DOWN] (4, 22)->rank2
+id=245 (4, 24)
+    [neighbor;LEFT] (3, 24)->rank2
+    [neighbor;UP] (4, 25)->rank2
+    [neighbor;RIGHT] (5, 24)->rank3
+    [neighbor;DOWN] (4, 23)->rank2
+id=255 (4, 25)
+    [neighbor;LEFT] (3, 25)->rank2
+    [neighbor;UP] (4, 26)->rank2
+    [neighbor;RIGHT] (5, 25)->rank3
+    [neighbor;DOWN] (4, 24)->rank2
+id=265 (4, 26)
+    [neighbor;LEFT] (3, 26)->rank2
+    [neighbor;UP] (4, 27)->rank2
+    [neighbor;RIGHT] (5, 26)->rank3
+    [neighbor;DOWN] (4, 25)->rank2
+id=275 (4, 27)
+    [neighbor;LEFT] (3, 27)->rank2
+    [neighbor;UP] (4, 28)->rank2
+    [neighbor;RIGHT] (5, 27)->rank3
+    [neighbor;DOWN] (4, 26)->rank2
+id=285 (4, 28)
+    [neighbor;LEFT] (3, 28)->rank2
+    [neighbor;UP] (4, 29)->rank2
+    [neighbor;RIGHT] (5, 28)->rank3
+    [neighbor;DOWN] (4, 27)->rank2
+id=295 (4, 29)
+    [neighbor;LEFT] (3, 29)->rank2
+    [neighbor;RIGHT] (5, 29)->rank3
+    [neighbor;DOWN] (4, 28)->rank2
+
+[rank 3] (5 <= x < 6)
+id=6 (5, 0)
+    [neighbor;LEFT] (4, 0)->rank2
+    [neighbor;UP] (5, 1)->rank3
+    [neighbor;RIGHT] (6, 0)->rank4
+id=16 (5, 1)
+    [neighbor;LEFT] (4, 1)->rank2
+    [neighbor;UP] (5, 2)->rank3
+    [neighbor;RIGHT] (6, 1)->rank4
+    [neighbor;DOWN] (5, 0)->rank3
+id=26 (5, 2)
+    [neighbor;LEFT] (4, 2)->rank2
+    [neighbor;UP] (5, 3)->rank3
+    [neighbor;RIGHT] (6, 2)->rank4
+    [neighbor;DOWN] (5, 1)->rank3
+id=36 (5, 3)
+    [neighbor;LEFT] (4, 3)->rank2
+    [neighbor;UP] (5, 4)->rank3
+    [neighbor;RIGHT] (6, 3)->rank4
+    [neighbor;DOWN] (5, 2)->rank3
+id=46 (5, 4)
+    [neighbor;LEFT] (4, 4)->rank2
+    [neighbor;UP] (5, 5)->rank3
+    [neighbor;RIGHT] (6, 4)->rank4
+    [neighbor;DOWN] (5, 3)->rank3
+id=56 (5, 5)
+    [neighbor;LEFT] (4, 5)->rank2
+    [neighbor;UP] (5, 6)->rank3
+    [neighbor;RIGHT] (6, 5)->rank4
+    [neighbor;DOWN] (5, 4)->rank3
+id=66 (5, 6)
+    [neighbor;LEFT] (4, 6)->rank2
+    [neighbor;UP] (5, 7)->rank3
+    [neighbor;RIGHT] (6, 6)->rank4
+    [neighbor;DOWN] (5, 5)->rank3
+id=76 (5, 7)
+    [neighbor;LEFT] (4, 7)->rank2
+    [neighbor;UP] (5, 8)->rank3
+    [neighbor;RIGHT] (6, 7)->rank4
+    [neighbor;DOWN] (5, 6)->rank3
+id=86 (5, 8)
+    [neighbor;LEFT] (4, 8)->rank2
+    [neighbor;UP] (5, 9)->rank3
+    [neighbor;RIGHT] (6, 8)->rank4
+    [neighbor;DOWN] (5, 7)->rank3
+id=96 (5, 9)
+    [neighbor;LEFT] (4, 9)->rank2
+    [neighbor;UP] (5, 10)->rank3
+    [neighbor;RIGHT] (6, 9)->rank4
+    [neighbor;DOWN] (5, 8)->rank3
+id=106 (5, 10)
+    [neighbor;LEFT] (4, 10)->rank2
+    [neighbor;UP] (5, 11)->rank3
+    [neighbor;RIGHT] (6, 10)->rank4
+    [neighbor;DOWN] (5, 9)->rank3
+id=116 (5, 11)
+    [neighbor;LEFT] (4, 11)->rank2
+    [neighbor;UP] (5, 12)->rank3
+    [neighbor;RIGHT] (6, 11)->rank4
+    [neighbor;DOWN] (5, 10)->rank3
+id=126 (5, 12)
+    [neighbor;LEFT] (4, 12)->rank2
+    [neighbor;UP] (5, 13)->rank3
+    [neighbor;RIGHT] (6, 12)->rank4
+    [neighbor;DOWN] (5, 11)->rank3
+id=136 (5, 13)
+    [neighbor;LEFT] (4, 13)->rank2
+    [neighbor;UP] (5, 14)->rank3
+    [neighbor;RIGHT] (6, 13)->rank4
+    [neighbor;DOWN] (5, 12)->rank3
+id=146 (5, 14)
+    [neighbor;LEFT] (4, 14)->rank2
+    [neighbor;UP] (5, 15)->rank3
+    [neighbor;RIGHT] (6, 14)->rank4
+    [neighbor;DOWN] (5, 13)->rank3
+id=156 (5, 15)
+    [neighbor;LEFT] (4, 15)->rank2
+    [neighbor;UP] (5, 16)->rank3
+    [neighbor;RIGHT] (6, 15)->rank4
+    [neighbor;DOWN] (5, 14)->rank3
+id=166 (5, 16)
+    [neighbor;LEFT] (4, 16)->rank2
+    [neighbor;UP] (5, 17)->rank3
+    [neighbor;RIGHT] (6, 16)->rank4
+    [neighbor;DOWN] (5, 15)->rank3
+id=176 (5, 17)
+    [neighbor;LEFT] (4, 17)->rank2
+    [neighbor;UP] (5, 18)->rank3
+    [neighbor;RIGHT] (6, 17)->rank4
+    [neighbor;DOWN] (5, 16)->rank3
+id=186 (5, 18)
+    [neighbor;LEFT] (4, 18)->rank2
+    [neighbor;UP] (5, 19)->rank3
+    [neighbor;RIGHT] (6, 18)->rank4
+    [neighbor;DOWN] (5, 17)->rank3
+id=196 (5, 19)
+    [neighbor;LEFT] (4, 19)->rank2
+    [neighbor;UP] (5, 20)->rank3
+    [neighbor;RIGHT] (6, 19)->rank4
+    [neighbor;DOWN] (5, 18)->rank3
+id=206 (5, 20)
+    [neighbor;LEFT] (4, 20)->rank2
+    [neighbor;UP] (5, 21)->rank3
+    [neighbor;RIGHT] (6, 20)->rank4
+    [neighbor;DOWN] (5, 19)->rank3
+id=216 (5, 21)
+    [neighbor;LEFT] (4, 21)->rank2
+    [neighbor;UP] (5, 22)->rank3
+    [neighbor;RIGHT] (6, 21)->rank4
+    [neighbor;DOWN] (5, 20)->rank3
+id=226 (5, 22)
+    [neighbor;LEFT] (4, 22)->rank2
+    [neighbor;UP] (5, 23)->rank3
+    [neighbor;RIGHT] (6, 22)->rank4
+    [neighbor;DOWN] (5, 21)->rank3
+id=236 (5, 23)
+    [neighbor;LEFT] (4, 23)->rank2
+    [neighbor;UP] (5, 24)->rank3
+    [neighbor;RIGHT] (6, 23)->rank4
+    [neighbor;DOWN] (5, 22)->rank3
+id=246 (5, 24)
+    [neighbor;LEFT] (4, 24)->rank2
+    [neighbor;UP] (5, 25)->rank3
+    [neighbor;RIGHT] (6, 24)->rank4
+    [neighbor;DOWN] (5, 23)->rank3
+id=256 (5, 25)
+    [neighbor;LEFT] (4, 25)->rank2
+    [neighbor;UP] (5, 26)->rank3
+    [neighbor;RIGHT] (6, 25)->rank4
+    [neighbor;DOWN] (5, 24)->rank3
+id=266 (5, 26)
+    [neighbor;LEFT] (4, 26)->rank2
+    [neighbor;UP] (5, 27)->rank3
+    [neighbor;RIGHT] (6, 26)->rank4
+    [neighbor;DOWN] (5, 25)->rank3
+id=276 (5, 27)
+    [neighbor;LEFT] (4, 27)->rank2
+    [neighbor;UP] (5, 28)->rank3
+    [neighbor;RIGHT] (6, 27)->rank4
+    [neighbor;DOWN] (5, 26)->rank3
+id=286 (5, 28)
+    [neighbor;LEFT] (4, 28)->rank2
+    [neighbor;UP] (5, 29)->rank3
+    [neighbor;RIGHT] (6, 28)->rank4
+    [neighbor;DOWN] (5, 27)->rank3
+id=296 (5, 29)
+    [neighbor;LEFT] (4, 29)->rank2
+    [neighbor;RIGHT] (6, 29)->rank4
+    [neighbor;DOWN] (5, 28)->rank3
+
+[rank 4] (6 <= x < 8)
+id=7 (6, 0)
+    [neighbor;LEFT] (5, 0)->rank3
+    [neighbor;UP] (6, 1)->rank4
+    [neighbor;RIGHT] (7, 0)->rank4
+id=17 (6, 1)
+    [neighbor;LEFT] (5, 1)->rank3
+    [neighbor;UP] (6, 2)->rank4
+    [neighbor;RIGHT] (7, 1)->rank4
+    [neighbor;DOWN] (6, 0)->rank4
+id=27 (6, 2)
+    [neighbor;LEFT] (5, 2)->rank3
+    [neighbor;UP] (6, 3)->rank4
+    [neighbor;RIGHT] (7, 2)->rank4
+    [neighbor;DOWN] (6, 1)->rank4
+id=37 (6, 3)
+    [neighbor;LEFT] (5, 3)->rank3
+    [neighbor;UP] (6, 4)->rank4
+    [neighbor;RIGHT] (7, 3)->rank4
+    [neighbor;DOWN] (6, 2)->rank4
+id=47 (6, 4)
+    [neighbor;LEFT] (5, 4)->rank3
+    [neighbor;UP] (6, 5)->rank4
+    [neighbor;RIGHT] (7, 4)->rank4
+    [neighbor;DOWN] (6, 3)->rank4
+id=57 (6, 5)
+    [neighbor;LEFT] (5, 5)->rank3
+    [neighbor;UP] (6, 6)->rank4
+    [neighbor;RIGHT] (7, 5)->rank4
+    [neighbor;DOWN] (6, 4)->rank4
+id=67 (6, 6)
+    [neighbor;LEFT] (5, 6)->rank3
+    [neighbor;UP] (6, 7)->rank4
+    [neighbor;RIGHT] (7, 6)->rank4
+    [neighbor;DOWN] (6, 5)->rank4
+id=77 (6, 7)
+    [neighbor;LEFT] (5, 7)->rank3
+    [neighbor;UP] (6, 8)->rank4
+    [neighbor;RIGHT] (7, 7)->rank4
+    [neighbor;DOWN] (6, 6)->rank4
+id=87 (6, 8)
+    [neighbor;LEFT] (5, 8)->rank3
+    [neighbor;UP] (6, 9)->rank4
+    [neighbor;RIGHT] (7, 8)->rank4
+    [neighbor;DOWN] (6, 7)->rank4
+id=97 (6, 9)
+    [neighbor;LEFT] (5, 9)->rank3
+    [neighbor;UP] (6, 10)->rank4
+    [neighbor;RIGHT] (7, 9)->rank4
+    [neighbor;DOWN] (6, 8)->rank4
+id=107 (6, 10)
+    [neighbor;LEFT] (5, 10)->rank3
+    [neighbor;UP] (6, 11)->rank4
+    [neighbor;RIGHT] (7, 10)->rank4
+    [neighbor;DOWN] (6, 9)->rank4
+id=117 (6, 11)
+    [neighbor;LEFT] (5, 11)->rank3
+    [neighbor;UP] (6, 12)->rank4
+    [neighbor;RIGHT] (7, 11)->rank4
+    [neighbor;DOWN] (6, 10)->rank4
+id=127 (6, 12)
+    [neighbor;LEFT] (5, 12)->rank3
+    [neighbor;UP] (6, 13)->rank4
+    [neighbor;RIGHT] (7, 12)->rank4
+    [neighbor;DOWN] (6, 11)->rank4
+id=137 (6, 13)
+    [neighbor;LEFT] (5, 13)->rank3
+    [neighbor;UP] (6, 14)->rank4
+    [neighbor;RIGHT] (7, 13)->rank4
+    [neighbor;DOWN] (6, 12)->rank4
+id=147 (6, 14)
+    [neighbor;LEFT] (5, 14)->rank3
+    [neighbor;UP] (6, 15)->rank4
+    [neighbor;RIGHT] (7, 14)->rank4
+    [neighbor;DOWN] (6, 13)->rank4
+id=157 (6, 15)
+    [neighbor;LEFT] (5, 15)->rank3
+    [neighbor;UP] (6, 16)->rank4
+    [neighbor;RIGHT] (7, 15)->rank4
+    [neighbor;DOWN] (6, 14)->rank4
+id=167 (6, 16)
+    [neighbor;LEFT] (5, 16)->rank3
+    [neighbor;UP] (6, 17)->rank4
+    [neighbor;RIGHT] (7, 16)->rank4
+    [neighbor;DOWN] (6, 15)->rank4
+id=177 (6, 17)
+    [neighbor;LEFT] (5, 17)->rank3
+    [neighbor;UP] (6, 18)->rank4
+    [neighbor;RIGHT] (7, 17)->rank4
+    [neighbor;DOWN] (6, 16)->rank4
+id=187 (6, 18)
+    [neighbor;LEFT] (5, 18)->rank3
+    [neighbor;UP] (6, 19)->rank4
+    [neighbor;RIGHT] (7, 18)->rank4
+    [neighbor;DOWN] (6, 17)->rank4
+id=197 (6, 19)
+    [neighbor;LEFT] (5, 19)->rank3
+    [neighbor;UP] (6, 20)->rank4
+    [neighbor;RIGHT] (7, 19)->rank4
+    [neighbor;DOWN] (6, 18)->rank4
+id=207 (6, 20)
+    [neighbor;LEFT] (5, 20)->rank3
+    [neighbor;UP] (6, 21)->rank4
+    [neighbor;RIGHT] (7, 20)->rank4
+    [neighbor;DOWN] (6, 19)->rank4
+id=217 (6, 21)
+    [neighbor;LEFT] (5, 21)->rank3
+    [neighbor;UP] (6, 22)->rank4
+    [neighbor;RIGHT] (7, 21)->rank4
+    [neighbor;DOWN] (6, 20)->rank4
+id=227 (6, 22)
+    [neighbor;LEFT] (5, 22)->rank3
+    [neighbor;UP] (6, 23)->rank4
+    [neighbor;RIGHT] (7, 22)->rank4
+    [neighbor;DOWN] (6, 21)->rank4
+id=237 (6, 23)
+    [neighbor;LEFT] (5, 23)->rank3
+    [neighbor;UP] (6, 24)->rank4
+    [neighbor;RIGHT] (7, 23)->rank4
+    [neighbor;DOWN] (6, 22)->rank4
+id=247 (6, 24)
+    [neighbor;LEFT] (5, 24)->rank3
+    [neighbor;UP] (6, 25)->rank4
+    [neighbor;RIGHT] (7, 24)->rank4
+    [neighbor;DOWN] (6, 23)->rank4
+id=257 (6, 25)
+    [neighbor;LEFT] (5, 25)->rank3
+    [neighbor;UP] (6, 26)->rank4
+    [neighbor;RIGHT] (7, 25)->rank4
+    [neighbor;DOWN] (6, 24)->rank4
+id=267 (6, 26)
+    [neighbor;LEFT] (5, 26)->rank3
+    [neighbor;UP] (6, 27)->rank4
+    [neighbor;RIGHT] (7, 26)->rank4
+    [neighbor;DOWN] (6, 25)->rank4
+id=277 (6, 27)
+    [neighbor;LEFT] (5, 27)->rank3
+    [neighbor;UP] (6, 28)->rank4
+    [neighbor;RIGHT] (7, 27)->rank4
+    [neighbor;DOWN] (6, 26)->rank4
+id=287 (6, 28)
+    [neighbor;LEFT] (5, 28)->rank3
+    [neighbor;UP] (6, 29)->rank4
+    [neighbor;RIGHT] (7, 28)->rank4
+    [neighbor;DOWN] (6, 27)->rank4
+id=297 (6, 29)
+    [neighbor;LEFT] (5, 29)->rank3
+    [neighbor;RIGHT] (7, 29)->rank4
+    [neighbor;DOWN] (6, 28)->rank4
+id=8 (7, 0)
+    [neighbor;LEFT] (6, 0)->rank4
+    [neighbor;UP] (7, 1)->rank4
+    [neighbor;RIGHT] (8, 0)->rank5
+id=18 (7, 1)
+    [neighbor;LEFT] (6, 1)->rank4
+    [neighbor;UP] (7, 2)->rank4
+    [neighbor;RIGHT] (8, 1)->rank5
+    [neighbor;DOWN] (7, 0)->rank4
+id=28 (7, 2)
+    [neighbor;LEFT] (6, 2)->rank4
+    [neighbor;UP] (7, 3)->rank4
+    [neighbor;RIGHT] (8, 2)->rank5
+    [neighbor;DOWN] (7, 1)->rank4
+id=38 (7, 3)
+    [neighbor;LEFT] (6, 3)->rank4
+    [neighbor;UP] (7, 4)->rank4
+    [neighbor;RIGHT] (8, 3)->rank5
+    [neighbor;DOWN] (7, 2)->rank4
+id=48 (7, 4)
+    [neighbor;LEFT] (6, 4)->rank4
+    [neighbor;UP] (7, 5)->rank4
+    [neighbor;RIGHT] (8, 4)->rank5
+    [neighbor;DOWN] (7, 3)->rank4
+id=58 (7, 5)
+    [neighbor;LEFT] (6, 5)->rank4
+    [neighbor;UP] (7, 6)->rank4
+    [neighbor;RIGHT] (8, 5)->rank5
+    [neighbor;DOWN] (7, 4)->rank4
+id=68 (7, 6)
+    [neighbor;LEFT] (6, 6)->rank4
+    [neighbor;UP] (7, 7)->rank4
+    [neighbor;RIGHT] (8, 6)->rank5
+    [neighbor;DOWN] (7, 5)->rank4
+id=78 (7, 7)
+    [neighbor;LEFT] (6, 7)->rank4
+    [neighbor;UP] (7, 8)->rank4
+    [neighbor;RIGHT] (8, 7)->rank5
+    [neighbor;DOWN] (7, 6)->rank4
+id=88 (7, 8)
+    [neighbor;LEFT] (6, 8)->rank4
+    [neighbor;UP] (7, 9)->rank4
+    [neighbor;RIGHT] (8, 8)->rank5
+    [neighbor;DOWN] (7, 7)->rank4
+id=98 (7, 9)
+    [neighbor;LEFT] (6, 9)->rank4
+    [neighbor;UP] (7, 10)->rank4
+    [neighbor;RIGHT] (8, 9)->rank5
+    [neighbor;DOWN] (7, 8)->rank4
+id=108 (7, 10)
+    [neighbor;LEFT] (6, 10)->rank4
+    [neighbor;UP] (7, 11)->rank4
+    [neighbor;RIGHT] (8, 10)->rank5
+    [neighbor;DOWN] (7, 9)->rank4
+id=118 (7, 11)
+    [neighbor;LEFT] (6, 11)->rank4
+    [neighbor;UP] (7, 12)->rank4
+    [neighbor;RIGHT] (8, 11)->rank5
+    [neighbor;DOWN] (7, 10)->rank4
+id=128 (7, 12)
+    [neighbor;LEFT] (6, 12)->rank4
+    [neighbor;UP] (7, 13)->rank4
+    [neighbor;RIGHT] (8, 12)->rank5
+    [neighbor;DOWN] (7, 11)->rank4
+id=138 (7, 13)
+    [neighbor;LEFT] (6, 13)->rank4
+    [neighbor;UP] (7, 14)->rank4
+    [neighbor;RIGHT] (8, 13)->rank5
+    [neighbor;DOWN] (7, 12)->rank4
+id=148 (7, 14)
+    [neighbor;LEFT] (6, 14)->rank4
+    [neighbor;UP] (7, 15)->rank4
+    [neighbor;RIGHT] (8, 14)->rank5
+    [neighbor;DOWN] (7, 13)->rank4
+id=158 (7, 15)
+    [neighbor;LEFT] (6, 15)->rank4
+    [neighbor;UP] (7, 16)->rank4
+    [neighbor;RIGHT] (8, 15)->rank5
+    [neighbor;DOWN] (7, 14)->rank4
+id=168 (7, 16)
+    [neighbor;LEFT] (6, 16)->rank4
+    [neighbor;UP] (7, 17)->rank4
+    [neighbor;RIGHT] (8, 16)->rank5
+    [neighbor;DOWN] (7, 15)->rank4
+id=178 (7, 17)
+    [neighbor;LEFT] (6, 17)->rank4
+    [neighbor;UP] (7, 18)->rank4
+    [neighbor;RIGHT] (8, 17)->rank5
+    [neighbor;DOWN] (7, 16)->rank4
+id=188 (7, 18)
+    [neighbor;LEFT] (6, 18)->rank4
+    [neighbor;UP] (7, 19)->rank4
+    [neighbor;RIGHT] (8, 18)->rank5
+    [neighbor;DOWN] (7, 17)->rank4
+id=198 (7, 19)
+    [neighbor;LEFT] (6, 19)->rank4
+    [neighbor;UP] (7, 20)->rank4
+    [neighbor;RIGHT] (8, 19)->rank5
+    [neighbor;DOWN] (7, 18)->rank4
+id=208 (7, 20)
+    [neighbor;LEFT] (6, 20)->rank4
+    [neighbor;UP] (7, 21)->rank4
+    [neighbor;RIGHT] (8, 20)->rank5
+    [neighbor;DOWN] (7, 19)->rank4
+id=218 (7, 21)
+    [neighbor;LEFT] (6, 21)->rank4
+    [neighbor;UP] (7, 22)->rank4
+    [neighbor;RIGHT] (8, 21)->rank5
+    [neighbor;DOWN] (7, 20)->rank4
+id=228 (7, 22)
+    [neighbor;LEFT] (6, 22)->rank4
+    [neighbor;UP] (7, 23)->rank4
+    [neighbor;RIGHT] (8, 22)->rank5
+    [neighbor;DOWN] (7, 21)->rank4
+id=238 (7, 23)
+    [neighbor;LEFT] (6, 23)->rank4
+    [neighbor;UP] (7, 24)->rank4
+    [neighbor;RIGHT] (8, 23)->rank5
+    [neighbor;DOWN] (7, 22)->rank4
+id=248 (7, 24)
+    [neighbor;LEFT] (6, 24)->rank4
+    [neighbor;UP] (7, 25)->rank4
+    [neighbor;RIGHT] (8, 24)->rank5
+    [neighbor;DOWN] (7, 23)->rank4
+id=258 (7, 25)
+    [neighbor;LEFT] (6, 25)->rank4
+    [neighbor;UP] (7, 26)->rank4
+    [neighbor;RIGHT] (8, 25)->rank5
+    [neighbor;DOWN] (7, 24)->rank4
+id=268 (7, 26)
+    [neighbor;LEFT] (6, 26)->rank4
+    [neighbor;UP] (7, 27)->rank4
+    [neighbor;RIGHT] (8, 26)->rank5
+    [neighbor;DOWN] (7, 25)->rank4
+id=278 (7, 27)
+    [neighbor;LEFT] (6, 27)->rank4
+    [neighbor;UP] (7, 28)->rank4
+    [neighbor;RIGHT] (8, 27)->rank5
+    [neighbor;DOWN] (7, 26)->rank4
+id=288 (7, 28)
+    [neighbor;LEFT] (6, 28)->rank4
+    [neighbor;UP] (7, 29)->rank4
+    [neighbor;RIGHT] (8, 28)->rank5
+    [neighbor;DOWN] (7, 27)->rank4
+id=298 (7, 29)
+    [neighbor;LEFT] (6, 29)->rank4
+    [neighbor;RIGHT] (8, 29)->rank5
+    [neighbor;DOWN] (7, 28)->rank4
+
+[rank 5] (8 <= x < 10)
+id=9 (8, 0)
+    [neighbor;LEFT] (7, 0)->rank4
+    [neighbor;UP] (8, 1)->rank5
+    [neighbor;RIGHT] (9, 0)->rank5
+id=19 (8, 1)
+    [neighbor;LEFT] (7, 1)->rank4
+    [neighbor;UP] (8, 2)->rank5
+    [neighbor;RIGHT] (9, 1)->rank5
+    [neighbor;DOWN] (8, 0)->rank5
+id=29 (8, 2)
+    [neighbor;LEFT] (7, 2)->rank4
+    [neighbor;UP] (8, 3)->rank5
+    [neighbor;RIGHT] (9, 2)->rank5
+    [neighbor;DOWN] (8, 1)->rank5
+id=39 (8, 3)
+    [neighbor;LEFT] (7, 3)->rank4
+    [neighbor;UP] (8, 4)->rank5
+    [neighbor;RIGHT] (9, 3)->rank5
+    [neighbor;DOWN] (8, 2)->rank5
+id=49 (8, 4)
+    [neighbor;LEFT] (7, 4)->rank4
+    [neighbor;UP] (8, 5)->rank5
+    [neighbor;RIGHT] (9, 4)->rank5
+    [neighbor;DOWN] (8, 3)->rank5
+id=59 (8, 5)
+    [neighbor;LEFT] (7, 5)->rank4
+    [neighbor;UP] (8, 6)->rank5
+    [neighbor;RIGHT] (9, 5)->rank5
+    [neighbor;DOWN] (8, 4)->rank5
+id=69 (8, 6)
+    [neighbor;LEFT] (7, 6)->rank4
+    [neighbor;UP] (8, 7)->rank5
+    [neighbor;RIGHT] (9, 6)->rank5
+    [neighbor;DOWN] (8, 5)->rank5
+id=79 (8, 7)
+    [neighbor;LEFT] (7, 7)->rank4
+    [neighbor;UP] (8, 8)->rank5
+    [neighbor;RIGHT] (9, 7)->rank5
+    [neighbor;DOWN] (8, 6)->rank5
+id=89 (8, 8)
+    [neighbor;LEFT] (7, 8)->rank4
+    [neighbor;UP] (8, 9)->rank5
+    [neighbor;RIGHT] (9, 8)->rank5
+    [neighbor;DOWN] (8, 7)->rank5
+id=99 (8, 9)
+    [neighbor;LEFT] (7, 9)->rank4
+    [neighbor;UP] (8, 10)->rank5
+    [neighbor;RIGHT] (9, 9)->rank5
+    [neighbor;DOWN] (8, 8)->rank5
+id=109 (8, 10)
+    [neighbor;LEFT] (7, 10)->rank4
+    [neighbor;UP] (8, 11)->rank5
+    [neighbor;RIGHT] (9, 10)->rank5
+    [neighbor;DOWN] (8, 9)->rank5
+id=119 (8, 11)
+    [neighbor;LEFT] (7, 11)->rank4
+    [neighbor;UP] (8, 12)->rank5
+    [neighbor;RIGHT] (9, 11)->rank5
+    [neighbor;DOWN] (8, 10)->rank5
+id=129 (8, 12)
+    [neighbor;LEFT] (7, 12)->rank4
+    [neighbor;UP] (8, 13)->rank5
+    [neighbor;RIGHT] (9, 12)->rank5
+    [neighbor;DOWN] (8, 11)->rank5
+id=139 (8, 13)
+    [neighbor;LEFT] (7, 13)->rank4
+    [neighbor;UP] (8, 14)->rank5
+    [neighbor;RIGHT] (9, 13)->rank5
+    [neighbor;DOWN] (8, 12)->rank5
+id=149 (8, 14)
+    [neighbor;LEFT] (7, 14)->rank4
+    [neighbor;UP] (8, 15)->rank5
+    [neighbor;RIGHT] (9, 14)->rank5
+    [neighbor;DOWN] (8, 13)->rank5
+id=159 (8, 15)
+    [neighbor;LEFT] (7, 15)->rank4
+    [neighbor;UP] (8, 16)->rank5
+    [neighbor;RIGHT] (9, 15)->rank5
+    [neighbor;DOWN] (8, 14)->rank5
+id=169 (8, 16)
+    [neighbor;LEFT] (7, 16)->rank4
+    [neighbor;UP] (8, 17)->rank5
+    [neighbor;RIGHT] (9, 16)->rank5
+    [neighbor;DOWN] (8, 15)->rank5
+id=179 (8, 17)
+    [neighbor;LEFT] (7, 17)->rank4
+    [neighbor;UP] (8, 18)->rank5
+    [neighbor;RIGHT] (9, 17)->rank5
+    [neighbor;DOWN] (8, 16)->rank5
+id=189 (8, 18)
+    [neighbor;LEFT] (7, 18)->rank4
+    [neighbor;UP] (8, 19)->rank5
+    [neighbor;RIGHT] (9, 18)->rank5
+    [neighbor;DOWN] (8, 17)->rank5
+id=199 (8, 19)
+    [neighbor;LEFT] (7, 19)->rank4
+    [neighbor;UP] (8, 20)->rank5
+    [neighbor;RIGHT] (9, 19)->rank5
+    [neighbor;DOWN] (8, 18)->rank5
+id=209 (8, 20)
+    [neighbor;LEFT] (7, 20)->rank4
+    [neighbor;UP] (8, 21)->rank5
+    [neighbor;RIGHT] (9, 20)->rank5
+    [neighbor;DOWN] (8, 19)->rank5
+id=219 (8, 21)
+    [neighbor;LEFT] (7, 21)->rank4
+    [neighbor;UP] (8, 22)->rank5
+    [neighbor;RIGHT] (9, 21)->rank5
+    [neighbor;DOWN] (8, 20)->rank5
+id=229 (8, 22)
+    [neighbor;LEFT] (7, 22)->rank4
+    [neighbor;UP] (8, 23)->rank5
+    [neighbor;RIGHT] (9, 22)->rank5
+    [neighbor;DOWN] (8, 21)->rank5
+id=239 (8, 23)
+    [neighbor;LEFT] (7, 23)->rank4
+    [neighbor;UP] (8, 24)->rank5
+    [neighbor;RIGHT] (9, 23)->rank5
+    [neighbor;DOWN] (8, 22)->rank5
+id=249 (8, 24)
+    [neighbor;LEFT] (7, 24)->rank4
+    [neighbor;UP] (8, 25)->rank5
+    [neighbor;RIGHT] (9, 24)->rank5
+    [neighbor;DOWN] (8, 23)->rank5
+id=259 (8, 25)
+    [neighbor;LEFT] (7, 25)->rank4
+    [neighbor;UP] (8, 26)->rank5
+    [neighbor;RIGHT] (9, 25)->rank5
+    [neighbor;DOWN] (8, 24)->rank5
+id=269 (8, 26)
+    [neighbor;LEFT] (7, 26)->rank4
+    [neighbor;UP] (8, 27)->rank5
+    [neighbor;RIGHT] (9, 26)->rank5
+    [neighbor;DOWN] (8, 25)->rank5
+id=279 (8, 27)
+    [neighbor;LEFT] (7, 27)->rank4
+    [neighbor;UP] (8, 28)->rank5
+    [neighbor;RIGHT] (9, 27)->rank5
+    [neighbor;DOWN] (8, 26)->rank5
+id=289 (8, 28)
+    [neighbor;LEFT] (7, 28)->rank4
+    [neighbor;UP] (8, 29)->rank5
+    [neighbor;RIGHT] (9, 28)->rank5
+    [neighbor;DOWN] (8, 27)->rank5
+id=299 (8, 29)
+    [neighbor;LEFT] (7, 29)->rank4
+    [neighbor;RIGHT] (9, 29)->rank5
+    [neighbor;DOWN] (8, 28)->rank5
+id=10 (9, 0)
+    [neighbor;LEFT] (8, 0)->rank5
+    [neighbor;UP] (9, 1)->rank5
+id=20 (9, 1)
+    [neighbor;LEFT] (8, 1)->rank5
+    [neighbor;UP] (9, 2)->rank5
+    [neighbor;DOWN] (9, 0)->rank5
+id=30 (9, 2)
+    [neighbor;LEFT] (8, 2)->rank5
+    [neighbor;UP] (9, 3)->rank5
+    [neighbor;DOWN] (9, 1)->rank5
+id=40 (9, 3)
+    [neighbor;LEFT] (8, 3)->rank5
+    [neighbor;UP] (9, 4)->rank5
+    [neighbor;DOWN] (9, 2)->rank5
+id=50 (9, 4)
+    [neighbor;LEFT] (8, 4)->rank5
+    [neighbor;UP] (9, 5)->rank5
+    [neighbor;DOWN] (9, 3)->rank5
+id=60 (9, 5)
+    [neighbor;LEFT] (8, 5)->rank5
+    [neighbor;UP] (9, 6)->rank5
+    [neighbor;DOWN] (9, 4)->rank5
+id=70 (9, 6)
+    [neighbor;LEFT] (8, 6)->rank5
+    [neighbor;UP] (9, 7)->rank5
+    [neighbor;DOWN] (9, 5)->rank5
+id=80 (9, 7)
+    [neighbor;LEFT] (8, 7)->rank5
+    [neighbor;UP] (9, 8)->rank5
+    [neighbor;DOWN] (9, 6)->rank5
+id=90 (9, 8)
+    [neighbor;LEFT] (8, 8)->rank5
+    [neighbor;UP] (9, 9)->rank5
+    [neighbor;DOWN] (9, 7)->rank5
+id=100 (9, 9)
+    [neighbor;LEFT] (8, 9)->rank5
+    [neighbor;UP] (9, 10)->rank5
+    [neighbor;DOWN] (9, 8)->rank5
+id=110 (9, 10)
+    [neighbor;LEFT] (8, 10)->rank5
+    [neighbor;UP] (9, 11)->rank5
+    [neighbor;DOWN] (9, 9)->rank5
+id=120 (9, 11)
+    [neighbor;LEFT] (8, 11)->rank5
+    [neighbor;UP] (9, 12)->rank5
+    [neighbor;DOWN] (9, 10)->rank5
+id=130 (9, 12)
+    [neighbor;LEFT] (8, 12)->rank5
+    [neighbor;UP] (9, 13)->rank5
+    [neighbor;DOWN] (9, 11)->rank5
+id=140 (9, 13)
+    [neighbor;LEFT] (8, 13)->rank5
+    [neighbor;UP] (9, 14)->rank5
+    [neighbor;DOWN] (9, 12)->rank5
+id=150 (9, 14)
+    [neighbor;LEFT] (8, 14)->rank5
+    [neighbor;UP] (9, 15)->rank5
+    [neighbor;DOWN] (9, 13)->rank5
+id=160 (9, 15)
+    [neighbor;LEFT] (8, 15)->rank5
+    [neighbor;UP] (9, 16)->rank5
+    [neighbor;DOWN] (9, 14)->rank5
+id=170 (9, 16)
+    [neighbor;LEFT] (8, 16)->rank5
+    [neighbor;UP] (9, 17)->rank5
+    [neighbor;DOWN] (9, 15)->rank5
+id=180 (9, 17)
+    [neighbor;LEFT] (8, 17)->rank5
+    [neighbor;UP] (9, 18)->rank5
+    [neighbor;DOWN] (9, 16)->rank5
+id=190 (9, 18)
+    [neighbor;LEFT] (8, 18)->rank5
+    [neighbor;UP] (9, 19)->rank5
+    [neighbor;DOWN] (9, 17)->rank5
+id=200 (9, 19)
+    [neighbor;LEFT] (8, 19)->rank5
+    [neighbor;UP] (9, 20)->rank5
+    [neighbor;DOWN] (9, 18)->rank5
+id=210 (9, 20)
+    [neighbor;LEFT] (8, 20)->rank5
+    [neighbor;UP] (9, 21)->rank5
+    [neighbor;DOWN] (9, 19)->rank5
+id=220 (9, 21)
+    [neighbor;LEFT] (8, 21)->rank5
+    [neighbor;UP] (9, 22)->rank5
+    [neighbor;DOWN] (9, 20)->rank5
+id=230 (9, 22)
+    [neighbor;LEFT] (8, 22)->rank5
+    [neighbor;UP] (9, 23)->rank5
+    [neighbor;DOWN] (9, 21)->rank5
+id=240 (9, 23)
+    [neighbor;LEFT] (8, 23)->rank5
+    [neighbor;UP] (9, 24)->rank5
+    [neighbor;DOWN] (9, 22)->rank5
+id=250 (9, 24)
+    [neighbor;LEFT] (8, 24)->rank5
+    [neighbor;UP] (9, 25)->rank5
+    [neighbor;DOWN] (9, 23)->rank5
+id=260 (9, 25)
+    [neighbor;LEFT] (8, 25)->rank5
+    [neighbor;UP] (9, 26)->rank5
+    [neighbor;DOWN] (9, 24)->rank5
+id=270 (9, 26)
+    [neighbor;LEFT] (8, 26)->rank5
+    [neighbor;UP] (9, 27)->rank5
+    [neighbor;DOWN] (9, 25)->rank5
+id=280 (9, 27)
+    [neighbor;LEFT] (8, 27)->rank5
+    [neighbor;UP] (9, 28)->rank5
+    [neighbor;DOWN] (9, 26)->rank5
+id=290 (9, 28)
+    [neighbor;LEFT] (8, 28)->rank5
+    [neighbor;UP] (9, 29)->rank5
+    [neighbor;DOWN] (9, 27)->rank5
+id=300 (9, 29)
+    [neighbor;LEFT] (8, 29)->rank5
+    [neighbor;DOWN] (9, 28)->rank5
+

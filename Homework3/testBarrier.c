@@ -125,13 +125,16 @@ int main()
 
     for(int i = 0; i < ncpus; i++)
     {
-        MPI_Barrier(MPI_COMM_WORLD);
+        if(i != myrank)
+            MPI_Barrier(MPI_COMM_WORLD);
         if(i == myrank)
         {
             printf("[rank %d] (%d <= x < %d)\n",myrank, localStart * gap, localEnd * gap);
+            fflush(stdout);
             for(int j = 0; j < localNPoint; j++)
             {
                 printf("id=%d (%d, %d)\n", points[j].id, points[j].x, points[j].y);
+                fflush(stdout);
                 for(int k = 0; k < 4; k++)
                 {
                     if(points[j].neighbors[k].valid)
@@ -140,11 +143,11 @@ int main()
                             points[j].neighbors[k].x,
                             points[j].neighbors[k].y,
                             points[j].neighbors[k].rank);
+                        fflush(stdout);
                 }
             }
             printf("\n"); 
         }
-        MPI_Barrier(MPI_COMM_WORLD);
     }
     for(int i = 0; i < 2; i++)
     {
