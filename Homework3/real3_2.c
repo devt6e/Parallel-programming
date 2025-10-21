@@ -57,21 +57,31 @@ int main()
 
     for(int i = 0; i < ncpus; i++)
     {
-        MPI_Barrier(MPI_COMM_WORLD);
+        if(i != myrank)
+            MPI_Barrier(MPI_COMM_WORLD);
         if(i == myrank )
         {
             printf("[rank %d] [%d, %d)\n",myrank, localStart * gap, localEnd * gap);
+            fflush(stdout);
             for(int j = 0; j < localNPoint; j++)
             {
                 if(j%ly == 0 && j != 0)
+                {
                     printf("\n");
+                    fflush(stdout);
+                }
                 if(j == localNPoint-1)
+                {
                     printf("id=%d (%d, %d)\n\n", points[j].id, points[j].x, points[j].y);
+                    fflush(stdout);
+                }
                 else
+                {
                     printf("id=%d (%d, %d), ", points[j].id, points[j].x, points[j].y);
+                    fflush(stdout);
+                }
             }
         }
-        MPI_Barrier(MPI_COMM_WORLD);
     }
     free(points);
     MPI_Finalize();
