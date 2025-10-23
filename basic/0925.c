@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 #include "mpi.h"
-#define BUF_SIZE (8500)
+#define BUF_SIZE (100)
 
 int main()
 {
